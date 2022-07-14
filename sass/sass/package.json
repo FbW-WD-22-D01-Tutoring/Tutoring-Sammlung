@@ -1,0 +1,12 @@
+{
+  "name": "tutoring-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass src/scss/main.scss src/css/main.css",
+    "watch-sass": "sass -w src/scss/main.scss src/css/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

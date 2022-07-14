@@ -1,0 +1,82 @@
+@import "reset";
+@import "variables";
+
+
+// basic styling
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.m-bottom {
+    margin-bottom: 1em;
+}
+
+// https://kulturbanause.de/blog/farben-mit-sass-veraendern/ farben mischen
+
+// website styling 
+header {
+    @extend .flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $bg-nav;
+    padding: 1rem 2rem;
+
+    div {
+        @extend .flex;
+        gap: 2rem;
+        align-items: center
+    }
+
+    nav {
+        ul {
+            @extend .flex;
+            gap: 2em;
+            
+            a {
+                display: inline-block;
+                padding: .75rem 1rem;
+                color: black;
+                border-radius: 50px;
+
+                transition: background-color 200ms ease-in-out;
+
+                &:hover {
+                    background-color: lightyellow; 
+                }
+            }
+
+            button {
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+main {
+
+    section {
+
+        &:first-of-type {
+            justify-content: space-evenly;
+            article {
+                margin-top: 3rem;
+                width: 40%;
+            }
+
+            @media screen and (max-width: 768px) {
+                flex-wrap: wrap;
+
+                article {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+
+}

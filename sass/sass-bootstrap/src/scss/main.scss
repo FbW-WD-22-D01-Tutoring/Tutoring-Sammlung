@@ -1,0 +1,15 @@
+// @import "../reset/normalize.css";
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: $tschüss;
+}
